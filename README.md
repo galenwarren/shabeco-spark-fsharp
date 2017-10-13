@@ -1,1 +1,1 @@
-# shabeco-spark-fsharp
+# spark-fsharp-demo
