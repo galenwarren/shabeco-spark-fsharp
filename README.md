@@ -10,7 +10,7 @@ Run this to ensure permissions are set properly:
 
 ```chmod 755 fsharp/sample.sh.exe```
 
-Run the following to open the interactive PySpark shell (ctrl-D exits). Note that there is apparently an interactive F# shell as well, but it would only work on a true Windows installation, and in this case the base image is Ubuntu.
+Run the following to open the interactive PySpark shell (ctrl-d exits). Note that there is apparently an interactive F# shell as well, but it would only work on a true Windows installation, and in this case the base image is Ubuntu.
 
 ```docker run -it --rm spark-fsharp-python-demo:latest```
 
@@ -18,6 +18,6 @@ Run the following to run a Python Spark job, which just does a simple aggregatio
 
 ```docker run -it -v ${PWD}:/opt/project spark-fsharp-python-demo spark/bin/spark-submit --master local /opt/project/python/sample.py project/zips.json```
 
-Run the following to do the same thing but using F# instead. The code is [here](./fsharp/sample.fs).
+Run the following to do the same thing but using F# instead. The code is [here](./fsharp/sample/Program.fs).
 
 ```docker run -it -v ${PWD}:/opt/project spark-fsharp-python-demo mobius/runtime/scripts/sparkclr-submit.sh --master local --exe sample.sh.exe project/fsharp project/zips.json```
