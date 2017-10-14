@@ -1,6 +1,6 @@
 Simple demo of using Spark with Python and F#.
 
-First, clone the repo and change into the root folder. The commands below should be run in Powershell on Windows, any shell on Linux, from the root folder of the repo.
+First, clone the repo and change into the root folder. The commands below should be run in Powershell on Windows, any shell on Linux, from the root folder of the repo. Docker must be installed.
 
 Run the following to build the docker image with Spark, Python, Mono/F#, and Mobius. This will take a few minutes but only has to be done once. This uses Spark v2.0.2 as this is apparently the highest version supported by the current version of Mobius.
 
