@@ -3,9 +3,6 @@ open Microsoft.Spark.CSharp.Core
 open System.Diagnostics
 open System
 
-// a custom filter function
-let includeZipcode (zipcode: string) : bool = zipcode.EndsWith "3"
-
 [<EntryPoint>]
 let main argv = 
     // connect to spark
