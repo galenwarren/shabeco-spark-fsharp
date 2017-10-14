@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec mono project/fsharp/sample/bin/Debug/sample.exe $1
