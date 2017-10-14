@@ -10,6 +10,10 @@ If running on Linux, run the following to ensure permissions are set properly (n
 
 ```chmod 755 fsharp/sample.sh.exe```
 
+If running on Windows, run the following to make sure that the script file has Linux-style LF line endings, not Windows CRLF:
+
+```docker run -it -v ${PWD}:/opt/project spark-fsharp-python-demo sed -i -e 's/\r$//' project/fsharp/sample.sh.exe```
+
 Run the following to open the interactive PySpark shell (ctrl-d exits). Note that there is apparently an interactive F# shell as well, but it would only work on a true Windows installation, and in this case the base image is Ubuntu.
 
 ```docker run -it --rm spark-fsharp-python-demo:latest```
