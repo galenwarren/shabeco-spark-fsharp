@@ -6,7 +6,7 @@ Run the following to build the docker image with Spark, Python, Mono/F#, and Mob
 
 ```docker build --force-rm -t spark-fsharp-python-demo:latest .```
 
-Run this to ensure permissions are set properly:
+If running on Linux, run the following to ensure permissions are set properly (not necessary if on Windows):
 
 ```chmod 755 fsharp/sample.sh.exe```
 
