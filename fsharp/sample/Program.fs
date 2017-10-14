@@ -4,7 +4,7 @@ open System.Diagnostics
 open System
 
 [<EntryPoint>]
-let main argv = 
+let main argv =
     // connect to spark
     let sparkContext = SparkContext(SparkConf().SetAppName("sample"))
     let sqlContext = SqlContext.GetOrCreate(sparkContext)
